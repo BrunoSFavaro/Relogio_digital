@@ -8,6 +8,8 @@ const relogio = setInterval(function time() {
     let min = DateToday.getMinutes();
     let sec = DateToday.getSeconds();
 
+
+    //Sempre que o tempo for representado por apenas 1 caracter, acompanha um 0 antes dele
     if(hr < 10) hr = "0" + hr;
     if(min < 10) min = "0" + min;
     if(sec < 10) sec = "0" + sec;
